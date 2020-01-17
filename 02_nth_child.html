@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nth Child</title>
+    <style>
+        body {
+            background-color: #deb887;
+        }
+
+        li {
+            padding: 0.25rem;
+            margin: 0.25rem;
+            list-style: none;
+        }
+
+        /* First Child */
+        .one li:first-child {
+            background: #7fff00;
+        }
+
+        /* Last Child */
+        .one li:last-child {
+            background: #7fff00;
+        }
+
+        /* to overwrite even if it is the order Every 4th start from 7, use !important..see line 43 */
+        .one li:nth-child(11) {
+            background: #da1818 !important;
+        }
+
+        /* Position 3 */
+        .one li:nth-child(3) {
+            background: #5edfdf;
+        }
+
+        /* Every 4 (counter + offset*/
+        .one li:nth-child(4n) {
+            background: #024d02;
+        }
+        /* Every 4th start from 7 */
+        .one li:nth-child(4n + 7) {
+            background: #9ac25a;
+        }
+
+        /* Every Odd */
+        .two li:nth-child(odd) {
+            background: #333;
+        }
+
+        /* Every Even */
+        .two li:nth-child(even) {
+            background: #7a7a7a;
+        }
+
+        
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="one">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+            <li>Item 11</li>
+            <li>Item 12</li>
+            <li>Item 13</li>
+            <li>Item 14</li>
+            <li>Item 15</li>
+            <li>Item 16</li>
+            <li>Item 17</li>
+            <li>Item 18</li>
+            <li>Item 19</li>
+            <li>Item 20</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="two">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+            <li>Item 11</li>
+            <li>Item 12</li>
+            <li>Item 13</li>
+            <li>Item 14</li>
+            <li>Item 15</li>
+            <li>Item 16</li>
+            <li>Item 17</li>
+            <li>Item 18</li>
+            <li>Item 19</li>
+            <li>Item 20</li>
+        </ul>
+    </div>
+</body>
+</html>
