@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03 Before - After</title>
+    <style>
+
+        /* core style */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #2e2e2d;
+            color: #7cfc00;
+            margin: 0;
+        }
+
+        .is-required:after {
+            content: '*';
+            color: #f00;
+            padding-left: 2px;
+        }
+        .is-required:before {
+            content: '*';
+            color: #00f;
+            padding-left: 2px;
+        }
+        /* Showcase example */
+
+        header, section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;            
+        }
+
+        header:before {
+            content: '';
+            background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        header > h1 {
+            font-size: 4rem;
+            margin: 1rem;
+            text-shadow: 3px 3px 3px #fff;            
+        }
+    </style>
+</head>
+<body>
+    <!-- <label for="name" class="is-required">Name</label>
+    <input type="text"> -->
+    
+    <!-- practical -->
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero impedit optio maxime reiciendis est vitae odio veniam qui rem minus?</p>
+    </header>
+    <section>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi recusandae beatae asperiores explicabo aut enim cumque natus modi fugiat? Aperiam, ipsa est repudiandae ullam magnam placeat animi sequi, beatae recusandae unde consequatur labore quas!</p>
+    </section>
+</body>
+</html>
