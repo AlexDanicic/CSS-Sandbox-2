@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06 CSS Variables</title>
+    <style>
+        /* base style */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ROOT SCOPE FOR VARIABLES */
+        :root {
+            --max-width: 1100px;
+            --primary-color: #4682b4;
+            --light-color: #f4f4f4;
+            --secondary-color: #87ceeb;
+            --box-3--width: 1;
+            --box-4--width: 2;
+            --box-5--width: 3;
+        }
+
+        body {
+            text-align: center;
+            line-height: 1.4;
+            background: var(--light-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: bisque;
+            border-bottom: 5px solid var(--secondary-color) ;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);            
+        }
+
+        .box {
+            background-color: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color);
+            color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .box-3 {flex: var(--box-3--width)}
+        .box-4 {flex: var(--box-4--width)}
+        .box-5 {flex: var(--box-5--width)}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+        <div class="box box-4">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box box-4">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+        <div class="box box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box box-4">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+        <div class="box box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box box-5">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+        <div class="box box-4">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+        <div class="box box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores totam unde quibusdam sit placeat rem fugit pariatur laboriosam recusandae?</p>
+        </div>
+    </div>
+</body>
+</html>
